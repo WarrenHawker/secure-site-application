@@ -1,0 +1,23 @@
+/* typography */
+h1 {
+  color: var(--color-green);
+}
+
+h2 {
+  color: var(--color-grey);
+}
+
+h3 {
+  color: var(--color-green);
+}
+
+h4 {
+  color: black;
+}
+
+p,
+a,
+button {
+  color: black;
+  font-family: 'din-2014', sans-serif;
+}

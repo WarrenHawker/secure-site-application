@@ -1,0 +1,78 @@
+/* Header */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  margin-bottom: 0.5em;
+  row-gap: 0.5em;
+}
+
+.top-nav-item.home {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-item.home img {
+  height: 50px;
+  width: 55px;
+}
+
+.top-nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-nav-item a:hover {
+  text-decoration: underline;
+}
+
+.top-nav-item button {
+  background-color: white;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+.top-nav-item button:hover {
+  background-color: black;
+  color: white;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey);
+  padding: 0.5em 0;
+}
+
+.page-title .up-next h3 {
+  margin-bottom: 0;
+  text-align: right;
+  color: black;
+}
+
+.page-title .up-next p {
+  margin-top: 0;
+  color: var(--color-red);
+  font-weight: bold;
+  text-align: right;
+}
+
+@media screen and (max-width: 750px) {
+  .top-nav {
+    display: block;
+  }
+
+  .top-nav ul {
+    width: 100%;
+    padding-left: 0;
+  }
+}

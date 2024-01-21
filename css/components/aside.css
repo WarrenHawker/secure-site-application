@@ -1,0 +1,55 @@
+/* aside*/
+aside {
+  display: flex;
+  gap: 1.5em;
+}
+
+.side-nav ul {
+  padding-left: 0;
+}
+
+.side-nav-item {
+  margin-bottom: 1em;
+}
+
+.side-nav-item img {
+  width: 90px;
+}
+
+aside ol {
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding-left: 0;
+}
+
+aside .list-title {
+  margin-top: 2.5em;
+}
+
+aside ol li::before {
+  content: counter(my-counter) '.';
+  counter-increment: my-counter;
+  color: var(--color-green);
+  font-weight: 700;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+
+aside ol li {
+  font-size: 1.15rem;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 750px) {
+  #aside-text {
+    display: none;
+  }
+
+  #aside-text.show {
+    display: block;
+  }
+
+  .side-nav-item img {
+    width: 70px;
+  }
+}

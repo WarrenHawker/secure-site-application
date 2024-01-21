@@ -1,0 +1,72 @@
+/* import other css files */
+@import url(abstracts/color.css);
+@import url(abstracts/text.css);
+@import url(components/aside.css);
+@import url(components/footer.css);
+@import url(components/header.css);
+@import url(components/main.css);
+
+/* CSS resets */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1em 2em;
+  max-width: 1600px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0;
+}
+
+/* layout */
+body {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+header,
+footer {
+  grid-column: 1 / -1;
+}
+
+main {
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    grid-template-columns: 90px auto;
+    padding: 1em;
+  }
+
+  .mobile-text-show {
+    grid-column: 1 / -1;
+  }
+}
